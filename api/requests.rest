@@ -6,14 +6,12 @@ POST http://localhost:3001/todo/new
 Content-Type: application/json
 
 {
-  "text" : "Get Bread"
+  "text" : "Send a Post"
 } 
 
 ###
-DELETE http://localhost:3001/todo/delete/6376b331ac4c25b425b55ec3
+DELETE http://localhost:3001/todo/delete/63770b6a7b219eb351e2240a
 
 ###
 
 PUT http://localhost:3001/todo/complete/6376bc46a5410516ffa3e9d8
-
- 
