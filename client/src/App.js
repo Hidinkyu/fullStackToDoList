@@ -59,14 +59,12 @@ const App = () => {
 			<div className="todos">
 				{todos.map(todo => (
 					<div className="todoBox" key={todo._id}>
-				<div className={"todo " + (todo.complete ? "is-complete" : '')} onClick={() => completeTodo(todo._id)}>
-					<div className="checkBox"></div>
-
-					<div className="text">{todo.text}</div>
-
-				</div>
+						<div className={"todo " + (todo.complete ? "is-complete" : '')} onClick={() => completeTodo(todo._id)}>
+							<div className="checkBox"></div>
+							<div className="text">{todo.text}</div>
+						</div>
 					<div className="delete-todo noselect" onClick={() => deleteTodo(todo._id)}>X</div> 
-					</div>
+				</div>
 				))}
 			</div>
 			<div className="addPopup noselect" onClick={() => setPopupActive(true)}> + </div>
